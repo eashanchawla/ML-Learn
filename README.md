@@ -1,2 +1,2 @@
-# open3d-python
-My experiments with open3d and 3d point clouds?
+# Learning
+For ad-hoc topics that I want to learn and practice. 
