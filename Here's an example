@@ -1,0 +1,5 @@
+import subprocess
+
+# Create two subprocesses: one running ls -l and another running python script
+subprocess.run(["ls", "-l"], stdout=subprocess.PIPE)
+subprocess.Popen(["python", "script.py"])
