@@ -78,11 +78,16 @@ Throughout this process:
 
 - **Single process**: Refers to a single instance of the Python interpreter.
 
-### In Python
-- Single process refers to a single instance of the python interpreter
-
 ## Subprocess
-- This module allows us to execute, manage additional processes, like running python scripts, running other applications (like ffmpeg). 
+- This module allows us to execute and manage additional processes, like running Python scripts or other applications (like ffmpeg).
 
+## Learning Path
 
-- This module allows us to execute, manage additional processes, like running Python scripts or other applications (like ffmpeg).
+1. **basic_subprocess.py**: Introduction to subprocess.run() for executing simple commands.
+2. **handle_output_error.py**: Capturing both stdout and stderr from a subprocess.
+3. **subprocess_stdout.py**: Focusing on capturing and handling stdout.
+4. **subprocess_stderr.py**: Focusing on capturing and handling stderr.
+5. **subprocess_pipe.py**: Using subprocess to create pipes between commands.
+6. **subprocess_ffmpeg_mic.py**: Advanced usage with ffmpeg to capture audio and use threading.Queue.
+
+Each file builds on the concepts of the previous ones, gradually introducing more complex subprocess operations.
