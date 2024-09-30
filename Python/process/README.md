@@ -79,6 +79,7 @@ Throughout this process:
 - **Single process**: Refers to a single instance of the Python interpreter.
 
 ## Subprocess
+
 - This module allows us to execute and manage additional processes, like running Python scripts or other applications (like ffmpeg).
 
 ## Learning Path
@@ -92,40 +93,38 @@ Throughout this process:
 
 Each file builds on the concepts of the previous ones, gradually introducing more complex subprocess operations.
 
-### Subprocess module             
+### Subprocess module
 
-When you run a subprocess using subprocess.run() or subprocess.Popen(), it creates an instance of the shell that knows what program ls refers to. This allows you to use the same       
-command in your Python script and have it executed as if it were running directly on your system.                                                                                       
+When you run a subprocess using subprocess.run() or subprocess.Popen(), it creates an instance of the shell that knows what program ls refers to. This allows you to use the same command in your Python script and have it executed as if it were running directly on your system.
 
-Shell Environment                                                                                                                                                                       
+#### Shell Environment
 
-The subprocess inherits the existing shell environment, which includes:                                                                                                                 
+The subprocess inherits the existing shell environment, which includes:
 
- • Current working directory                                                                                                                                                            
- • Command history                                                                                                                                                                      
- • Other settings                                                                                                                                                                       
+- Current working directory
+- Command history
+- Other settings
 
-This means that the subprocess can interact with the output of other commands without needing to create a new interpreter instance.                                                     
+This means that the subprocess can interact with the output of other commands without needing to create a new interpreter instance.
 
-Creating New Interpreter Instances                                                                                                                                                      
+#### Creating New Interpreter Instances
 
-When you use Popen(), it creates a new process that runs the specified command and captures its output. This is equivalent to running another Python script.                            
+When you use Popen(), it creates a new process that runs the specified command and captures its output. This is equivalent to running another Python script.
 
-Here's an example:                                                                                                                                                                      
+Here's an example:
 
-                                                                                                                                                                                        
- import subprocess                                                                                                                                                                      
-                                                                                                                                                                                        
- # Create two subprocesses: one running ls -l and another running python script                                                                                                         
- subprocess.run(["ls", "-l"], stdout=subprocess.PIPE)                                                                                                                                   
- subprocess.Popen(["python", "script.py"])                                                                                                                                              
-                                                                                                                                                                                        
+```python
+import subprocess
 
-In this case, both subprocesses will run independently of each other. The ls command in the first subprocess will execute as if it were running directly on your system, while the      
-Python script in the second subprocess will be executed by a separate process.                                                                                                          
+# Create two subprocesses: one running ls -l and another running python script
+subprocess.run(["ls", "-l"], stdout=subprocess.PIPE)
+subprocess.Popen(["python", "script.py"])
+```
 
-Key Takeaways                                                                                                                                                                           
+In this case, both subprocesses will run independently of each other. The ls command in the first subprocess will execute as if it were running directly on your system, while the Python script in the second subprocess will be executed by a separate process.
 
- • Subprocesses create an instance of the shell that knows what program ls refers to.                                                                                                   
- • The subprocess inherits the existing shell environment.                                                                                                                              
- • Creating new interpreter instances using Popen() is equivalent to running another Python script.   
+#### Key Takeaways
+
+- Subprocesses create an instance of the shell that knows what program ls refers to.
+- The subprocess inherits the existing shell environment.
+- Creating new interpreter instances using Popen() is equivalent to running another Python script.
