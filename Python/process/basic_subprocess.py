@@ -7,5 +7,11 @@
  - Print the captured output.                                                                                                                                                           
 """                                                                                                                                                                                    
                                                                                                                                                                                         
- # Your code here                                                                                                                                                                       
+import subprocess
+
+# Run the command and capture the output
+result = subprocess.run(['echo', 'Hello, World!'], capture_output=True, text=True)
+
+# Print the captured output
+print(result.stdout.strip())
                                                                                                                                                                                         
