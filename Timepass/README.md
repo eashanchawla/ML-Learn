@@ -1,0 +1,3 @@
+In his stand-up special Keep It Real, Kanan Gill humorously defines the very Indian concept of timepass as both an activity and a review of an activity. He jokes that timepass is something Indians engage in to pass the time, but it's also how they describe a lot of things they do without a specific purpose. It reflects a mindset where certain activities, like watching a movie or hanging out, are simply ways to pass time, but they are treated as a normal part of life. 
+
+How was that movie? It was timepass. FELT LIKE THE PASSAGE OF TIME
