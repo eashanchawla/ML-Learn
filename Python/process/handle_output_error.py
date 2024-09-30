@@ -1,10 +1,17 @@
-"""                                                                                                                                                                                    
- Write a Python script that uses the subprocess module to execute an external command.                                                                                                  
- The command should be 'ls -l /nonexistent_directory' (which will fail).                                                                                                                
-                                                                                                                                                                                        
- - Use subprocess.run() to execute the command.                                                                                                                                         
- - Capture both stdout and stderr.                                                                                                                                                      
- - Print the captured output and error messages.                                                                                                                                        
-"""                                                                                                                                                                                    
-                                                                                                                                                                                        
- # Your code here     
+"""
+This script demonstrates how to handle both output and error streams from a subprocess.
+
+Assignment:
+1. Use the subprocess module to execute the command 'ls -l /nonexistent_directory'.
+2. Capture both stdout and stderr from this command.
+3. Print both the captured output and error messages.
+
+Key concepts:
+- Using subprocess.run() with arguments to capture both stdout and stderr
+- Handling command execution that is expected to fail
+- Differentiating between standard output and error output
+
+Note: This command is designed to fail, as it tries to list a non-existent directory.
+"""
+
+# Your code here

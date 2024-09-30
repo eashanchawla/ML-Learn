@@ -1,9 +1,17 @@
 """
-Write a Python script that uses subprocess to create a pipe between two commands.
-Use 'echo "Hello, pipe!" | wc -w' as the piped commands.
+This script demonstrates how to use subprocess to create a pipe between two commands.
 
-- Use subprocess.Popen() to create the pipe.
-- Capture and print the output of the second command.
+Assignment:
+1. Use subprocess to execute the piped command: 'echo "Hello, pipe!" | wc -w'
+2. Capture the output of the second command (wc -w).
+3. Print the captured output.
+
+Key concepts:
+- Using subprocess.Popen() to create a pipe between commands
+- Chaining multiple commands in a subprocess
+- Capturing output from a piped command
+
+Note: This example simulates a pipe in the shell, where the output of 'echo' is used as input for 'wc -w'.
 """
 
 # Your code here
