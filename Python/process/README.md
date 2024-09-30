@@ -78,6 +78,11 @@ Throughout this process:
 
 - **Single process**: Refers to a single instance of the Python interpreter.
 
+### In Python
+- Single process refers to a single instance of the python interpreter
+
 ## Subprocess
+- This module allows us to execute, manage additional processes, like running python scripts, running other applications (like ffmpeg). 
+
 
 - This module allows us to execute, manage additional processes, like running Python scripts or other applications (like ffmpeg).
