@@ -84,8 +84,8 @@ Throughout this process:
 
 ## Learning Path
 
-1. **basic_subprocess.py**: Introduction to subprocess.run() for executing simple commands.
-2. **handle_output_error.py**: Capturing both stdout and stderr from a subprocess.
+1. **[basic_subprocess.py](basic_subprocess.py)**: Introduction to subprocess.run() for executing simple commands.
+2. **[handle_output_error.py](handling_output_error.py)**: Capturing both stdout and stderr from a subprocess.
 3. **subprocess_stdout.py**: Focusing on capturing and handling stdout.
 4. **subprocess_stderr.py**: Focusing on capturing and handling stderr.
 5. **subprocess_pipe.py**: Using subprocess to create pipes between commands.
