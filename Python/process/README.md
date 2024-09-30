@@ -85,11 +85,11 @@ Throughout this process:
 ## Learning Path
 
 1. **[basic_subprocess.py](basic_subprocess.py)**: Introduction to subprocess.run() for executing simple commands.
-2. **[handle_output_error.py](handling_output_error.py)**: Capturing both stdout and stderr from a subprocess.
-3. **subprocess_stdout.py**: Focusing on capturing and handling stdout.
-4. **subprocess_stderr.py**: Focusing on capturing and handling stderr.
-5. **subprocess_pipe.py**: Using subprocess to create pipes between commands.
-6. **subprocess_ffmpeg_mic.py**: Advanced usage with ffmpeg to capture audio and use threading.Queue.
+2. **[handle_output_error.py](handle_output_error.py)**: Capturing both stdout and stderr from a subprocess.
+3. **[subprocess_stdout.py](subprocess_stdout.py)**: Focusing on capturing and handling stdout.
+4. **[subprocess_stderr.py](subprocess_stderr.py)**: Focusing on capturing and handling stderr.
+5. **[subprocess_pipe.py](subprocess_pipe.py)**: Using subprocess to create pipes between commands.
+6. **[subprocess_ffmpeg_mic.py](subprocess_ffmpeg_mic.py)**: Advanced usage with ffmpeg to capture audio and use threading.Queue.
 
 Each file builds on the concepts of the previous ones, gradually introducing more complex subprocess operations.
 
