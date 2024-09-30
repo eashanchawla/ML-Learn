@@ -79,4 +79,10 @@ The chef's notebook (PCB) doesn't store the actual data, but keeps track of wher
 The chef (CPU) actively works with the data in RAM, reading instructions and manipulating information as directed by the recipe (program code).
 
 
+### In Python
+- Single process refers to a single instance of the python interpreter
+
+## Subprocess
+- This module allows us to execute, manage additional processes, like running python scripts, running other applications (like ffmpeg). 
+
 
