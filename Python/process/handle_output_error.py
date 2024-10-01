@@ -15,3 +15,11 @@ Note: This command is designed to fail, as it tries to list a non-existent direc
 """
 
 # Your code here
+import subprocess
+
+output = subprocess.run(["ls", "-l", "/nonexistent_directory"], stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+if output.returncode != 0:
+    print("Error occurred")
+    print(output.stderr.decode())
+else:
+    print(output.stdout.decode())

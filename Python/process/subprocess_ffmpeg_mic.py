@@ -25,3 +25,5 @@ import threading
 import queue
 
 # Your code here
+def capture_audio():
+    pass

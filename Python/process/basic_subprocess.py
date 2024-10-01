@@ -6,3 +6,9 @@
  - Use subprocess.run() to execute the command.                                                                                                                                         
  - Print the captured output.                                                                                                                                                           
 """                                                                                                                                                                                    
+
+import subprocess
+
+output = subprocess.run(["echo", "Hello, World!"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+print(output.stdout.decode())

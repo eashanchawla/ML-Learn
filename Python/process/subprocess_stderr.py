@@ -15,3 +15,4 @@ Note: This command is designed to produce an error, as it tries to list a non-ex
 """
 
 # Your code here
+# I will instead try to use .popen. It is supposed to be a lower level method to provide more control over how we run, handle outputs from subprocesses
