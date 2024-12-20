@@ -1,0 +1,28 @@
+from abc import ABC, abstractmethod
+
+class StochasticGradientDescent:
+    def __init__(self):
+        pass
+
+    def step():
+        pass
+
+
+from dataclasses import dataclass
+
+@dataclass
+class LearningRate:
+    learning_rate: float = 0.0
+
+
+class LRScheduler(ABC):
+    @abstractmethod
+    def step(self):
+        return []
+
+class LRScheduler():
+    pass
+
+class Loss:
+    pass
+

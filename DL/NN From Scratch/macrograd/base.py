@@ -77,6 +77,9 @@ class Value:
         out = self * (other ** -1)
         return out
     
+    def relu():
+        '''ReLU activation implementation'''
+
     def __neg__(self):
         return self * -1
     
@@ -84,6 +87,7 @@ class Value:
         return self + (-other)
 
     def backward(self):
+        '''doing a topological sort to get order in which we must execute back propagation'''
         ordering = []
         visited = []
         def topological_traversal(e):
